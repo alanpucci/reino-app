@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.alanpucci.reinocasero"
     },
     "web": {
       "favicon": "./assets/favicon.png"
