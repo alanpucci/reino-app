@@ -61,7 +61,7 @@ const Home = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
-            <MenuHeader title="Ganancias" onPress={() => navigation.openDrawer()} />
+            <MenuHeader icon="menu" title="Ganancias" onPress={() => navigation.openDrawer()} />
             <View style={styles.centerContainer}>
                 <Card style={{ width: '90%', height: '90%' }}>
                     <CardItem style={{ alignSelf: 'center', paddingTop: 25 }}>

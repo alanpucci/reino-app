@@ -71,7 +71,7 @@ const Expenses = ({ navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <MenuHeader title="Gastos" onPress={() => navigation.openDrawer()} />
+            <MenuHeader title="Gastos" icon="menu" onPress={() => navigation.openDrawer()} />
             <KeyboardAvoidingView
                 behavior="height" keyboardVerticalOffset={-50}
                 style={styles.container}
@@ -80,9 +80,6 @@ const Expenses = ({ navigation }) => {
                     :
                     <ScrollView contentContainerStyle={styles.centerContainer}>
                         <Card style={{ width: '90%', height: '90%' }}>
-                            {/* <CardItem style={{ alignSelf: 'center', paddingTop: 25 }}>
-                                <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Ventas del mes</Text>
-                            </CardItem> */}
                             <View style={{ flex: 1, justifyContent: 'space-around' }}>
                                 <View>
                                     <DateTimePickerModal

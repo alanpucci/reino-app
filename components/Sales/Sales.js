@@ -1,12 +1,10 @@
 import { useFocusEffect } from '@react-navigation/core';
 import axios from 'axios';
-import { Item, Spinner } from 'native-base';
-import { Button, Card, CardItem, Form, Text, View } from 'native-base';
-import React, { useState } from 'react';
+import { Item, Spinner, Button, Card, CardItem, Form, Text, View } from 'native-base';
+import React, { useState, useCallback } from 'react';
 import { StyleSheet, KeyboardAvoidingView, SafeAreaView, Modal } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { TextInputMask } from 'react-native-masked-text';
-import { useCallback } from 'react/cjs/react.development';
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import MenuHeader from '../MenuHeader/MenuHeader';
 import { sleep } from '../../utils/utils';
@@ -66,7 +64,7 @@ const Sales = ({ navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <MenuHeader title="Ventas" onPress={() => navigation.openDrawer()} />
+            <MenuHeader icon="menu" title="Ventas" onPress={() => navigation.openDrawer()} />
             <KeyboardAvoidingView
                 behavior="height" keyboardVerticalOffset={-50}
                 style={styles.container}
